@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <title>Checkout</title>
+            <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body class="bodych">
+         <header>
+            <div class="header-left">
+                <img src="photos/logo.png" alt="logo" height="100" >
+                <h1>Pup Fiction </h1>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
+                <div class="search-results" id="searchResults"></div>
+            </div>
+
+            <div class="header-right">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <div class="dropdown">
+                            <a class="dropdown-pets">Pets</a>
+                            <div class="dropdown-menu">
+                                <a href="dogs/dogs.html">Dogs</a>
+                                <a href="Cat Product Page/Cat products/cats.html">Cats</a>
+                                <a href="Fish Product Page/Fish products/fish.html">Fish</a>
+                                <a href="birds/birds.html">Birds</a>
+                                <a href="exotic animals/ExoticAnimals.html">Other</a>
+                            </div>
+                        </div>
+                        
+                        
+                        <a href="Products/products.html">Products</a>
+                        <a href="pet_quiz/quiz.html">Quiz</a>
+                        <a href="aboutUs.html">About Us</a>
+                    </nav>
+
+                    
+                    <div class="cart-container">
+                        <a href="checkout.html" class="cart-link">
+                            🛒 <span id="cartTotal" class="cart-number"></span>
+                        </a>
+                        <button class="clear-cart-btn" onclick="resetCart()">✕</button>
+                    </div>
+            </div> 
+        </header>
+        <img class ="error" src="photos/checkout.jpg">
+        <footer class="footer">
+            <div class="footer-container">
+
+                    <div class="footer-logo">
+                        <img src="photos/logo.png" alt="logo">
+                    </div>
+                
+
+                <div class="footer-about">
+                    <h4> About us </h4>
+                    <p>
+                        We are a pet store dedicated to providing healthy pets,
+                    quality food, and accessories for your lovely companions.
+                    </p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4> Contact information: </h4>
+                    <h4> Petstoreinfo@gmail.com </h4>
+                    <h4> Location: Thessaloniki, Greece </h4>
+                </div>
+                
+                </div>
+        </footer>
+
+        <script src="javaScript.js"></script>
+    </body>
+</html>

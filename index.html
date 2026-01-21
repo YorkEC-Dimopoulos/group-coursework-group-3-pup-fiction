@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Pet Shop</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body> 
+        <header>
+            <div class="header-left">
+                <img src="photos/logo.png" alt="logo" height="100" >
+                <h1>Pup Fiction </h1>
+            </div>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search..." autocomplete="off">
+                <div class="search-results" id="searchResults"></div>
+            </div>
+
+            <div class="header-right">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <div class="dropdown">
+                            <a class="dropdown-pets">Pets</a>
+                            <div class="dropdown-menu">
+                                <a href="dogs/dogs.html">Dogs</a>
+                                <a href="Cat Product Page/Cat products/cats.html">Cats</a>
+                                <a href="Fish Product Page/Fish products/fish.html">Fish</a>
+                                <a href="birds/birds.html">Birds</a>
+                                <a href="exotic animals/ExoticAnimals.html">Other</a>
+                            </div>
+                        </div>
+                        
+                        
+                        <a href="Products/products.html">Products</a>
+                        <a href="pet_quiz/quiz.html">Quiz</a>
+                        <a href="aboutUs.html">About Us</a>
+                    </nav>
+
+                    
+                    <div class="cart-container">
+                        <a href="checkout.html" class="cart-link">
+                            🛒 <span id="cartTotal" class="cart-number"></span>
+                        </a>
+                        <button class="clear-cart-btn" onclick="resetCart()">✕</button>
+                    </div>
+            </div> 
+        </header>
+        <main>
+            <section class="banner">     
+                <img src="photos/banner.png" alt="banner">
+            </section> 
+
+            <div class="preview-section">
+                <h2 class="section-title">Take a sneak peek at our animals!</h2>
+                <div class="carousel">
+                    <button class="arrow" id="leftBtn">◀</button>
+                    <div class="carousel-window">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="product-card">
+                                <img src="photos/capybara3.png" alt="Dog" width="200px" height="250px">       
+                            </div>                            
+                            <div class="product-card">
+                                <img src="photos/fennec3.png" alt="Dog" width="200px" height="250px">       
+                            </div>  
+                            <div class="product-card">
+                                <img src="photos/chameleonhover.png" alt="Dog" width="200px" height="250px">       
+                            </div>  
+                            <div class="product-card">
+                                <img src="Cat Product Page/photos/Abyssinian.jpg" alt="Dog" width="200px" height="250px">       
+                            </div>                            
+                            <div class="product-card">
+                                <img src="Fish Product Page/photos/Betta.jpg" alt="Dog" width="200px" height="250px">       
+                            </div>   
+                            <div class="product-card">
+                                <img src="phottoschrisostomos/bassethound2.jpg" alt="Dog" width="200px" height="250px">       
+                            </div>  
+                            <div class="product-card">
+                                <img src="Cat Product Page/photos/Turkish.jpg" alt="Dog" width="200px" height="250px">       
+                            </div>   
+                            <div class="product-card">
+                                <img src="phottoschrisostomos/budgie.jpg" alt="Dog" width="200px" height="250px">       
+                            </div>   
+                        </div>
+                    </div>
+                    <button class="arrow" id="rightBtn">▶</button>
+                </div>
+            </div>
+        </main> 
+
+        <footer class="footer">
+            <div class="footer-container">
+
+                    <div class="footer-logo">
+                        <img src="photos/logo.png" alt="logo">
+                    </div>
+                
+
+                <div class="footer-about">
+                    <h4> About us </h4>
+                    <p>
+                        We are a pet store dedicated to providing healthy pets,
+                    quality food, and accessories for your lovely companions.
+                    </p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4> Contact information: </h4>
+                    <h4> Petstoreinfo@gmail.com </h4>
+                    <h4> Location: Thessaloniki, Greece </h4>
+                </div>
+                
+                </div>
+        </footer>
+
+        <script src="javaScript.js"></script>
+
+    </body>
+</html>
